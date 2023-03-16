@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDeCombate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- PREFETCH -->
+<link rel="prefetch" href="index.html" as="document">
+
+<!-- PRELOAD -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+    crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra"> 
+                <a class="logo " href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCombate</span></h1>
+               <!-- le pongo no margin y centrar texto al h1 para que se aliene bien cuando la web sea 768px    < -->
+                </a>
+
+                <nav class="navegacion">
+                    <a href= "nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href= "cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href= "contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+<!-- se usa el contenedor porque quiero centrar el contenido y que no se expanda hasta las orillas -->
+
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de Deportes de contacto</h2>
+            <p class="no-margin"> Aprende de peleadores expertos con los mejores tips y tecnicas</p>
+            <!-- no margin para que no se apliquen margenes -->
+        </div>
+    </header>
+
+  <main class="contenedor">
+    <h3 class="centrar-texto">Contacto</h3>
+    <div class="contacto-bg"></div>
+        <form class="formulario">
+             <div class="campo">
+                <label for="nombre" class="campo__label">Nombre</label>   <!-- for para que se conecte con el input -->
+                <input class="campo__field" 
+                type="text"
+                placeholder="Tu nombre"
+                id="nombre"> <!-- id solo se puede usar una vez en este archivo html -->
+            </div>
+            <div class="campo">
+                <label for="email"class="campo__label" >E-Mail:</label>
+                <input class="campo__field" 
+                type="text" 
+                placeholder="Tu E-Mail" 
+                id="email">
+            </div>
+            <div class="campo">
+                <label for="mensaje" class="campo__label">Mensaje:</label>
+                <textarea class="campo__field campo__field--textarea" 
+                id="mensaje"> 
+                </textarea> 
+            </div>
+            <div class="campo">
+                <input 
+                type="submit" 
+                value="Enviar" 
+                class="boton boton--primario">
+            </div>    
+            <!-- FIN DEL FORMULARIO -->  
+    </div>
+  </main> <!-- fin del main -->
+<footer class="footer">
+    <div class="contenedor">
+        <div class="barra"> 
+            <a class="logo " href="index.html">
+                <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCombate</span></h1>
+           <!-- le pongo no margin y centrar texto al h1 para que se aliene bien cuando la web sea 768px    < -->
+            </a>
+
+            <nav class="navegacion">
+                <a href= "nosotros.html" class="navegacion__enlace">Nosotros</a>
+                <a href= "cursos.html" class="navegacion__enlace">Cursos</a>
+                <a href= "contacto.html" class="navegacion__enlace">Contacto</a>
+            </nav>
+        </div> <!-- copia de toda la barra que esta en el header -->
+          
+    </div>
+</footer>
+    <script src="js/modernizr.js"></script>
+</body>
+</html>

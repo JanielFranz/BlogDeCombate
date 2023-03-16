@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDeCombate</title>
+    <meta name="description" content="Pagina web de Blog de deportes de contacto">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <!-- PREFETCH -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+    <!-- PRELOAD -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+    crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+
+</head>
+<body>
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra"> 
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCombate</span></h1>
+               <!-- le pongo no margin y centrar texto al h1 para que se aliene bien cuando la web sea 768px    < -->
+                </a>
+
+                <nav class="navegacion">
+                    <a href= "nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href= "cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href= "contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+<!-- se usa el contenedor porque quiero centrar el contenido y que no se expanda hasta las orillas -->
+
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de Deportes de contacto</h2>
+            <p class="no-margin"> Aprende de peleadores expertos con los mejores tips y tecnicas</p>
+            <!-- no margin para que no se apliquen margenes -->
+        </div>
+    </header>
+
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Nuestro Blog</h3>
+
+            <!-- PRIMERA ENTRADA  -->
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source srcset="img/blog1.webp" type="image/webp"> 
+                        <img src="img/blog1.jpg" alt="imagen blog" loading="lazy">
+
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">La importancia de la Preparacion Fisica en deportes de combate</h4>          <!-- class no margin para que no tenga margenes -->
+                    <p>t is a long established fact that a reader will be distracted by 
+                        the readable content of a page when looking at its layout. he point of using Lorem Ipsum is that 
+                        it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                         content here',
+                    </p>
+                    <a href="entrada1.html" class="boton boton--primario">Leer Entrada</a>     <!-- boton es un bloque y boton--primario es un modificador -->
+                </div>
+            </article>            <!-- Se usa article porque son entradas del blog -->
+
+
+            <!-- SEGUNDA ENTRADA -->
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source srcset="img/blog2.webp" type="image/webp">
+                        <img src="img/blog2.jpg" alt="imagen blog" loading="lazy">
+                    </picture>
+
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Como hacer un correcto corte de peso para una competicion</h4>          <!-- class no margin para que no tenga margenes -->
+                    <p>t is a long established fact that a reader will be distracted by 
+                        the readable content of a page when looking at its layout. he point of using Lorem Ipsum is that 
+                        it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                         content here',
+                    </p>
+                    <a href="entrada2.html" class="boton boton--primario">Leer Entrada</a>     <!-- boton es un bloque y boton--primario es un modificador -->
+                </div>
+            </article>            <!-- Se usa article porque son entradas del blog -->
+
+
+            <!-- TERCERA ENTRADA -->
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source srcset="img/blog3.webp" type="image/webp">
+                        <img src="img/blog3.jpg" alt="imagen blog" loading="lazy">
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">La importancia de la preactivación antes de un combate</h4>          <!-- class no margin para que no tenga margenes -->
+                    <p>t is a long established fact that a reader will be distracted by 
+                        the readable content of a page when looking at its layout. he point of using Lorem Ipsum is that 
+                        it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                         content here',
+                    </p>
+                    <a href="entrada3.html" class="boton boton--primario">Leer Entrada</a>     <!-- boton es un bloque y boton--primario es un modificador -->
+                </div>
+            </article>            <!-- Se usa article porque son entradas del blog -->
+        </main>
+
+        <aside class="sidebar">
+            <h3>Nuestros cursos y talleres</h3>
+            <ul class="cursos no-padding">   <!-- unorder list -->
+                <li class="widget-curso"> <!-- abro lista -->
+                    <h4 class="no-margin">Curso de Boxeo</h4>
+
+                    <p class="widget-curso__label">
+                        Precio: <span class="widget-curso__info">Gratis</span>
+                    </p>
+
+                    <p class="widget-curso__label">
+                        Cupo: <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="curso1.html" class="boton boton--secundario">Ver Curso</a>
+                </li>               
+
+
+                <li class="widget-curso"> <!-- abro lista 2 -->
+                    <h4 class="no-margin">Curso de Kickboxing</h4>
+
+                    <p class="widget-curso__label">
+                        Precio: <span class="widget-curso__info">Gratis</span>
+                    </p>
+
+                    <p class="widget-curso__label">
+                        Cupo: <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="curso2.html" class="boton boton--secundario">Ver Curso</a>
+                </li>        
+            </ul>          
+
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor">
+             <div class="barra"> 
+                <a class="logo " href="index.html">
+                     <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCombate</span></h1>
+                      <!-- le pongo no margin y centrar texto al h1 para que se aliene bien cuando la web sea 768px    < -->
+                 </a>
+
+            <nav class="navegacion">
+                <a href= "nosotros.html" class="navegacion__enlace">Nosotros</a>
+                <a href= "cursos.html" class="navegacion__enlace">Cursos</a>
+                <a href= "contacto.html" class="navegacion__enlace">Contacto</a>
+            </nav>
+        </div> <!-- copia de toda la barra que esta en el header -->
+          
+    </div> 
+</footer>
+     <script src="js/modernizr.js"></script>     <!-- javascript modernizr para usar webp en el banner -->
+
+ 
+</html>

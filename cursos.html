@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDeCombate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- PREFETCH -->
+<link rel="prefetch" href="index.html" as="document">
+<!-- PRELOAD -->
+<link rel="preload" href="css/normalize.css" as="style">
+<link rel="stylesheet" href="css/normalize.css">
+
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+crossorigin="crossorigin" as="font">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="preload" href="css/styles.css" as="style">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra"> 
+                <a class="logo " href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCombate</span></h1>
+               <!-- le pongo no margin y centrar texto al h1 para que se aliene bien cuando la web sea 768px    < -->
+                </a>
+
+                <nav class="navegacion">
+                    <a href= "nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href= "cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href= "contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+<!-- se usa el contenedor porque quiero centrar el contenido y que no se expanda hasta las orillas -->
+
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de Deportes de contacto</h2>
+            <p class="no-margin"> Aprende de peleadores expertos con los mejores tips y tecnicas</p>
+            <!-- no margin para que no se apliquen margenes -->
+        </div>
+    </header>
+
+
+<main class="contenedor">
+    <h3 class="centrar-texto">Nuestros Próximos Cursos y Talleres </h3> 
+    <div class="curso"> 
+        <div class="curso__imagen">
+            <picture>
+                <source srcset="img/curso1.webp" type="image/webp">
+                <img src="img/curso1.jpg" alt="Imagen del Curso" loading="lazy">
+            </picture>
+        </div>
+        <div class="curso__informacion">
+            <h4 class="no-margin">Curso de Boxeo</h4>
+            <p class="curso__label">
+                Precio: <span class="curso__info">Gratis</span>
+            </p>
+    
+            <p class="curso__label">
+                Cupo: <span class="curso__info">20</span>
+            </p>
+            <p class="curso__descripcion">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sapiente ut
+                 dolorem distinctio aut necessitatibus ab ducimus soluta quasi aperiam alias 
+                 consequuntur accusantium modi, maxime possimus est id voluptatem eaque! Lorem ipsum 
+                 dolor sit amet consectetur adipisicing elit. Placeat dolorem cumque, aut inventore 
+                 deserunt exercitationem eius aperiam perspiciatis error ratione cum numquam similique
+                  quam quisquam dicta eos neque minus suscipit!
+            </p>
+    
+        </div><!-- CIERRE DE LA INFORMACION DEL CURSO -->
+    </div>               <!-- CIERRE DEL CURSO -->
+
+    <div class="curso"> 
+        <div class="curso__imagen">
+            <picture>
+                <source srcset="img/curso2.webp" type="image/webp">
+                <img src="img/curso2.jpg" alt="Imagen del Curso" loading="lazy">
+            </picture>
+        </div>
+        <div class="curso__informacion">
+            <h4 class="no-margin">Curso de Kickboxing</h4>
+            <p class="curso__label">
+                Precio: <span class="curso__info">Gratis</span>
+            </p>
+    
+            <p class="widget-curso__label">
+                Cupo: <span class="curso__info">20</span>
+            </p>
+            <p class="curso__descripcion">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sapiente ut
+                 dolorem distinctio aut necessitatibus ab ducimus soluta quasi aperiam alias 
+                 consequuntur accusantium modi, maxime possimus est id voluptatem eaque! Lorem ipsum 
+                 dolor sit amet consectetur adipisicing elit. Placeat dolorem cumque, aut inventore 
+                 deserunt exercitationem eius aperiam perspiciatis error ratione cum numquam similique
+                  quam quisquam dicta eos neque minus suscipit!
+            </p>
+    
+        </div><!-- CIERRE DE LA INFORMACION DEL CURSO -->
+    </div>               <!-- CIERRE DEL CURSO -->
+
+    <div class="curso"> 
+        <div class="curso__imagen">
+            <picture>
+                <source srcset="img/curso3.webp" type="image/webp">
+                <img src="img/curso3.jpg" alt="Imagen del Curso" loading="lazy">
+            </picture>
+        </div>
+        <div class="curso__informacion">
+            <h4 class="no-margin">Curso de Muay Thai</h4>
+            <p class="curso__label">
+                Precio: <span class="curso__info">Gratis</span>
+            </p>
+    
+            <p class="curso__label">
+                Cupo: <span class="widget-curso__info">20</span>
+            </p>
+            <p class="curso__descripcion">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sapiente ut
+                 dolorem distinctio aut necessitatibus ab ducimus soluta quasi aperiam alias 
+                 consequuntur accusantium modi, maxime possimus est id voluptatem eaque! Lorem ipsum 
+                 dolor sit amet consectetur adipisicing elit. Placeat dolorem cumque, aut inventore 
+                 deserunt exercitationem eius aperiam perspiciatis error ratione cum numquam similique
+                  quam quisquam dicta eos neque minus suscipit!
+            </p>
+    
+        </div><!-- CIERRE DE LA INFORMACION DEL CURSO -->
+    </div>               <!-- CIERRE DEL CURSO -->
+
+
+
+</main>
+
+
+
+
+
+
+    <footer class="footer">
+    <div class="contenedor">
+        <div class="barra"> 
+            <a class="logo " href="index.html">
+                <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCombate</span></h1>
+           <!-- le pongo no margin y centrar texto al h1 para que se aliene bien cuando la web sea 768px    < -->
+            </a>
+
+            <nav class="navegacion">
+                <a href= "nosotros.html" class="navegacion__enlace">Nosotros</a>
+                <a href= "cursos.html" class="navegacion__enlace">Cursos</a>
+                <a href= "contacto.html" class="navegacion__enlace">Contacto</a>
+            </nav>
+        </div> <!-- copia de toda la barra que esta en el header -->
+          
+    </div>
+</footer>
+    <script src="js/modernizr.js"></script>
+</body>
+</html>
